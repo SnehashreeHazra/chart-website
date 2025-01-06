@@ -60,6 +60,15 @@ function DashboardMain() {
             </div>
           </div>
         </div>
+        <div className="deviation-module">
+          <div className="deviation-module-box">
+            
+          </div>
+        </div>
+        <div className="grievance-module"></div>
+        <div className="monitoring-module"></div>
+        <div className="management-module"></div>
+        <div className="finance-module"></div>
       </div>
     </div>
   )
