@@ -1,5 +1,17 @@
 import React from 'react'
 import { Chart } from "react-google-charts";
+import {Bar} from "react-chartjs-2"
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  TimeScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import 'chartjs-adapter-date-fns';
 import './DashboardMain.css'
 import icon1 from '../../../Images/Group 4534375.png'
 import icon2 from '../../../Images/Group 4534376.png'
@@ -8,6 +20,8 @@ import icon4 from '../../../Images/Group 4534378.png'
 import group_img from "../../../Images/group-img.png"
 import file_four_img from '../../../Images/file-4.png'
 import ongoing_img from '../../../Images/number-3.png'
+
+ChartJS.register(CategoryScale, LinearScale, BarElement, TimeScale, Title, Tooltip, Legend);
 
 export const data1 = [
   ["Task", "Hours per Day"],
@@ -84,6 +98,7 @@ export const options3 = {
   title: "Project Fund",
   bar: { groupWidth: "25%" },
   legend: "none",
+  borderRadius: 10
 }
 
 const data4 = [
@@ -116,75 +131,72 @@ const options4 = {
 };
 
 
-export const data5 = [
-  [
-    { type: "string", label: "Task ID" },
-    { type: "string", label: "Task Name" },
-    { type: "string", label: "Resource" },
-    { type: "date", label: "Start Date" },
-    { type: "date", label: "End Date" },
-    { type: "number", label: "Duration" },
-    { type: "number", label: "Percent Complete" },
-    { type: "string", label: "Dependencies" },
-  ],
-  [
-    "Road1",
-    "Road Construction - Unakoti",
-    "Pending",
-    new Date(2025, 0, 1),
-    new Date(2025, 1, 1),
-    null,
-    0,
-    null,
-  ],
-  [
-    "Pipeline1",
-    "Pipeline - North Tripura",
-    "In Process",
-    new Date(2025, 3, 1),
-    new Date(2025, 4, 1),
-    null,
-    50,
-    null,
-  ],
-  [
-    "Tourism",
-    "Tourism Model - South Tripura",
-    "Completed",
-    new Date(2025, 5, 1),
-    new Date(2025, 6, 1),
-    null,
-    100,
-    null,
-  ],
-  [
-    "Road2",
-    "Road Construction - Sepahijala",
-    "Pending",
-    new Date(2025, 8, 1),
-    new Date(2025, 9, 1),
-    null,
-    0,
-    null,
-  ],
-  [
-    "Pipeline2",
-    "Pipeline - North Tripura",
-    "In Process",
-    new Date(2025, 10, 1),
-    new Date(2025, 11, 1),
-    null,
-    50,
-    null,
-  ],
-];
 
-export const options5 = {
-  height: 600,
-  gantt: {
-    trackHeight: 50,
-  },
+const data5 = {
+  // labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+  datasets: [
+    {
+      label: "Weekly Sales",
+      data: [
+        {x: ['2025-01-01', '2025-02-28'], y: 'Road Construction'},
+        {x: ['2025-03-01', '2025-04-30'], y: 'Pipeline'},
+        {x: ['2025-05-01', '2025-06-30'], y: 'Tourism Model'},
+        {x: ['2025-09-01', '2025-10-30'], y: 'Road Construction2'},
+        {x: ['2025-07-01', '2025-08-30'], y: 'Pipeline2'},
+        
+      ],
+      backgroundColor: [
+        "#FF2929",
+        "#FF8D29",
+        "#2A6B07",
+        "#FF2929",
+        "#FF8D29",
+        
+      ],
+      
+      borderWidth: 1,
+      borderSkipped: false,
+      borderRadius: 10,
+      barPercentage: 0.3
+    },
+  ],
 };
+
+// Configuration options
+const options5 = {
+  indexAxis: 'y',
+  responsive: true,
+  plugins: {
+    legend: {
+      position: "top",
+    },
+    title: {
+      display: true,
+      text: "Weekly Sales Data",
+    },
+  },
+  scales: {
+    x: {
+      position: 'top',
+      type: 'time',
+      time: {
+        unit: 'month'
+      },
+      min: '2025-01-01',
+      max: '2025-12-30'
+    },
+  },
+  plugins: {
+    legend: {
+      display: false
+    }
+  }
+};
+
+
+
+
+
 
 
 function DashboardMain() {
@@ -485,13 +497,7 @@ function DashboardMain() {
           <h2>Procurement Module</h2>
             <div className="last-chart-wrapper">
             <h3>Project Plan</h3>
-            <Chart
-            chartType="Gantt"
-            width="100%"
-            height="300px"
-            data={data5}
-            options={options5}
-            />
+            <Bar data={data5} options={options5} style={{ marginTop: '20px', backgroundColor: '#fff', borderRadius: '10px' }}/>
             </div>
           </div>
         </div>

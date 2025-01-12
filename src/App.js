@@ -4,6 +4,7 @@ import DashboardMain from './components/view/DashboardMain/DashboardMain.jsx';
 import FinancialDashboard from './components/view/FinancialDashboard/FinancialDashboard.jsx';
 import TaskTracking from './components/view/TaskTracking/TaskTracking.jsx';
 import Performance from './components/view/Performance/Performance.jsx';
+import ProcurementModule from './components/view/ProcurementModule/ProcurementModule.jsx';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/financial-dashboard' element={<FinancialDashboard />}></Route>
           <Route path='/task-tracking' element={<TaskTracking />}></Route>
           <Route path='/performance' element={<Performance/>}></Route>
+          <Route path='/procure-module' element={<ProcurementModule />}></Route>
       </Route>
     </Routes>
     </BrowserRouter>

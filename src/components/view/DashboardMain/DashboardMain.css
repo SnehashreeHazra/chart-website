@@ -47,6 +47,7 @@
   font-size: 12px;
   font-weight: 500;
   color: #AEADBA;
+  margin-bottom: 0;
 }
 .small-div-content p{
   font-size: 12px;
@@ -73,6 +74,7 @@
 
 .thired-big-div{
   display: flex;
+  column-gap: 20px;
 }
 .first-big-div{
   width: 100%;
@@ -129,13 +131,14 @@
 .heading-container h2{
   font-size: 10px;
   font-weight: 400;
+  margin-bottom: 10px
 }
 .heading-container img{
   width: 25px;
   height: 20px;
 }
 .ongoing-div p{
-  margin-top: 5px;
+  /* margin-top: 5px; */
   font-size: 8px;
 }
 .bottom-div{
@@ -143,7 +146,7 @@
   margin-top: 10px;
   /* justify-content: center; */
   align-items: center;
-  gap: 35px;
+  gap: 45px;
 }
 .bottom-div .left-bottom{
   display: flex;
@@ -155,9 +158,13 @@
 }
 .second-big-div{
   margin-top: 15px;
+  height: 250px;
 }
 .second-big-div h2{
   font-size: 15px;
+}
+.last-chart-wrapper{
+  height: 400px;
 }
 .last-chart-wrapper h3{
   font-size: 13px;

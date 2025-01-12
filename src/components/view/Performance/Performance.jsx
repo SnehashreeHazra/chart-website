@@ -28,6 +28,25 @@ export const options = {
   },
 };
 
+
+
+export const data2 = [
+  ["Task", "Hours per Day"],
+  ["Primary", 45],
+  ["REPEAT", 25],
+  ["Priority", 50],
+  ["FRESH", 45],
+  
+];
+
+export const options2 = {
+  title: "Grievance",
+  pieHole: 0.8,
+  is3D: false,
+  colors: ["#40BEA6", "#FF7C3B", "#B3A8F9"],
+  legend: { position: "bottom" }
+};
+
 function Performance() {
   return (
     <div className='performance'>
@@ -74,32 +93,28 @@ function Performance() {
                 />
     </div>
 
-    <div className="project-complete-s">
-    <div style={{ textAlign: "center", backgroundColor: "#f6f8fa", padding: "20px", borderRadius: "10px" }}>
-      <h2 style={{ marginBottom: "10px" }}>Project Complete</h2>
-      <ResponsiveContainer width="80%" height={100}>
-        <BarChart
-          layout="vertical"
-          data={data}
-          margin={{ top: 10, right: 20, left: 20, bottom: 10 }}
-        >
-          <XAxis type="number" hide />
-          <YAxis type="category" dataKey="name" hide />
-          <Tooltip />
-          <Bar dataKey="completed" stackId="a" fill="#007bff">
-            <Cell key="completed" fill="#007bff" />
-          </Bar>
-          <Bar dataKey="remaining" stackId="a" fill="#c5d9f7">
-            <Cell key="remaining" fill="#c5d9f7" />
-          </Bar>
-        </BarChart>
-      </ResponsiveContainer>
-      <div style={{ display: "flex", justifyContent: "space-between", padding: "0 10%" }}>
-        <span>45%</span>
-        <span>55%</span>
+    
       </div>
-    </div>
-    </div>
+      <div className="second-big-wrapper">
+        <div className="task-wrapper">
+          <Chart
+                      chartType="PieChart"
+                        width="300px"
+                        height="230px"
+                        data={data2}
+                        options={options2}
+                    />
+        </div>
+        <div className="resources-task-wrapper">
+          <Chart
+                      chartType="PieChart"
+                        width="300px"
+                        height="230px"
+                        data={data2}
+                        options={options2}
+                    />
+        </div>
+        <div className="cost-budget-wrapper"></div>
       </div>
     </div>
     </div>

@@ -15,15 +15,15 @@
 
 .table-chart-wrapper{
   display: flex;
+  align-items: center;
 }
 
 .table-container {
-  font-family: Arial, sans-serif;
   background-color: transparent;
   padding: 20px;
   border-radius: 8px;
   max-width: 400px;
-  margin: auto;
+  min-width: 400px;
 }
 
 h2 {
@@ -47,4 +47,8 @@ h2 {
 .project-table td:first-child {
   font-weight: bold;
   /* background-color: #f9f9f9; */
+}
+.second-big-wrapper{
+  display: flex;
+  column-gap: 15px;
 }
