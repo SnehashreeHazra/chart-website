@@ -13,6 +13,7 @@
   width: calc(100% - 220px);
   margin-left: auto;
   padding-right: 20px;
+  height: 90vh;
 }
 .fund-donut-wrapper{
   display: flex;
@@ -28,10 +29,11 @@
 .donut-chart-div{
   display: flex;
   width: 100%;
-  max-width: 40%;
-  min-width: 40%;
+  max-width: 48%;
+  min-width: 48%;
   height: 250px;
   column-gap: 30px;
+  justify-content: flex-end;
 }
 .report-expence-wrapper{
   margin-top: 20px;
@@ -52,15 +54,15 @@
   max-width: 50%;
   height: 300px;
 }
-.table-container{
+.table-container1{
   background-color: #fff;
   width: 100%;
   height: 100%;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .table-title{
-  font-size: 20px;
+  font-size: 14px;
 }
 table{
   width: 100%;

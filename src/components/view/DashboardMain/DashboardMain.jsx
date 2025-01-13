@@ -20,6 +20,7 @@ import icon4 from '../../../Images/Group 4534378.png'
 import group_img from "../../../Images/group-img.png"
 import file_four_img from '../../../Images/file-4.png'
 import ongoing_img from '../../../Images/number-3.png'
+import msg_four from '../../../Images/footer-4.png'
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, TimeScale, Title, Tooltip, Legend);
 
@@ -35,7 +36,7 @@ export const options1 = {
   pieHole: 0.8,
   is3D: false,
   colors: ["#BCD0FF", "#2F69F4"],
-  legend: { position: "bottom" }
+  legend: { position: "bottom" },
 };
 
 
@@ -317,12 +318,12 @@ function DashboardMain() {
         <div className="thired-big-div">
           <div className="first-big-div">
             <div className="first-big-div-wrapper">
-              <h2>scheme Management</h2>
+              <h2>Scheme Management</h2>
               <h3>Activity Management</h3>
               <div className="three-div-wrapper">
                 <div className="first-div">
                 <div className="head">
-                  <h2>ongoing</h2>
+                  <h2>Ongoing</h2>
                   <img src={ongoing_img} alt="" />
                 </div>
 
@@ -339,6 +340,7 @@ function DashboardMain() {
                       </div>
                       <div className="right-img-div"><img src={group_img} alt="" /></div>
                     </div>
+                      <div className="message-img"><img src={msg_four} alt="" /></div>
                   </div>
 
 
@@ -355,6 +357,7 @@ function DashboardMain() {
                       </div>
                       <div className="right-img-div"><img src={group_img} alt="" /></div>
                     </div>
+                    <div className="message-img"><img src={msg_four} alt="" /></div>
                   </div>
 
 
@@ -372,15 +375,15 @@ function DashboardMain() {
                       </div>
                       <div className="right-img-div"><img src={group_img} alt="" /></div>
                     </div>
+                  <div className="message-img"><img src={msg_four} alt="" /></div>
                   </div>
-
                 </div>
 
 
 
                 <div className="first-div">
                 <div className="head">
-                  <h2>completed</h2>
+                  <h2>Completed</h2>
                   <img src={ongoing_img} alt="" />
                 </div>
 
@@ -397,6 +400,7 @@ function DashboardMain() {
                       </div>
                       <div className="right-img-div"><img src={group_img} alt="" /></div>
                     </div>
+                    <div className="message-img"><img src={msg_four} alt="" /></div>
                   </div>
 
 
@@ -413,6 +417,7 @@ function DashboardMain() {
                       </div>
                       <div className="right-img-div"><img src={group_img} alt="" /></div>
                     </div>
+                    <div className="message-img"><img src={msg_four} alt="" /></div>
                   </div>
 
 
@@ -430,6 +435,7 @@ function DashboardMain() {
                       </div>
                       <div className="right-img-div"><img src={group_img} alt="" /></div>
                     </div>
+                  <div className="message-img"><img src={msg_four} alt="" /></div>
                   </div>
                 </div>
 
@@ -455,6 +461,7 @@ function DashboardMain() {
                       </div>
                       <div className="right-img-div"><img src={group_img} alt="" /></div>
                     </div>
+                    <div className="message-img"><img src={msg_four} alt="" /></div>
                   </div>
 
 
@@ -471,6 +478,7 @@ function DashboardMain() {
                       </div>
                       <div className="right-img-div"><img src={group_img} alt="" /></div>
                     </div>
+                    <div className="message-img"><img src={msg_four} alt="" /></div>
                   </div>
 
 
@@ -488,6 +496,7 @@ function DashboardMain() {
                       </div>
                       <div className="right-img-div"><img src={group_img} alt="" /></div>
                     </div>
+                    <div className="message-img"><img src={msg_four} alt="" /></div>
                   </div>
                 </div>
               </div>

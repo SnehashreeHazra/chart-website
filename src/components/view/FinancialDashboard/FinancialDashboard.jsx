@@ -153,7 +153,7 @@ function FinancialDashboard() {
                 />
         </div>
         <div className="donut-chart-div">
-          <div className="first-dount">
+          <div className="first-donut">
             <Chart
                         chartType="PieChart"
                           width="250px"
@@ -165,7 +165,7 @@ function FinancialDashboard() {
           <div className="second-donut">
             <Chart
                         chartType="PieChart"
-                          width="250px"
+                          width="300px"
                           height="100%"
                           data={data2}
                           options={options2}
@@ -187,7 +187,7 @@ function FinancialDashboard() {
             </div>
           </div>
           <div className="report-table-wrapper">
-              <div className="table-container">
+              <div className="table-container1">
                 <h2 className='table-title'>Financial Reporting</h2>
                 <table>
                 <thead>

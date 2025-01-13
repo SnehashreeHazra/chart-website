@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Performance.css'
 import { Chart } from "react-google-charts";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from "recharts";
@@ -32,22 +32,42 @@ export const options = {
 
 export const data2 = [
   ["Task", "Hours per Day"],
-  ["Primary", 45],
-  ["REPEAT", 25],
-  ["Priority", 50],
-  ["FRESH", 45],
+  ["On time task", 60],
+  ["LATE TASKS", 60],
+  ["Early Task", 25],
+  ["", 25],
   
 ];
 
 export const options2 = {
-  title: "Grievance",
+  title: "Tasks",
   pieHole: 0.8,
   is3D: false,
-  colors: ["#40BEA6", "#FF7C3B", "#B3A8F9"],
-  legend: { position: "bottom" }
+  colors: ["#40BEA6", "#FF7C3B", "#B3A8F9", "#B3A8F9"],
+};
+
+
+
+export const data3 = [
+  ["Task", "Hours per Day"],
+  ["On time task", 60],
+  ["LATE TASKS", 60],
+  ["Early Task", 25],
+  ["", 25],
+  
+];
+
+export const options3 = {
+  title: "Resource and tasks",
+  pieHole: 0.8,
+  is3D: false,
+  colors: ["#40BEA6", "#FF7C3B", "#B3A8F9", "#B3A8F9"],
+
 };
 
 function Performance() {
+  
+
   return (
     <div className='performance'>
     <div className="performance-content">
@@ -58,11 +78,14 @@ function Performance() {
       <table className="project-table">
         <tbody>
           <tr>
-            START
+          <td colSpan="2">
+          START
+          </td>
+            
           </tr>
           <tr>
-            <td>FINISH</td>
-            <td>2018-04-04</td>
+            <td style={{width: "50%"}}>FINISH</td>
+            <td style={{width: "50%"}}>2018-04-04</td>
           </tr>
           <tr>
             <td>DURATION</td>
@@ -86,20 +109,30 @@ function Performance() {
     <div className="resource-chart-div">
       <Chart
                 chartType="BarChart"
-                width="220px"
+                width="350px"
                 height="200px"
                 data={data}
                 options={options}
                 />
     </div>
 
-    
+    <div className="progress-bar-section">
+    <div className="budget-heading">
+          <h2>Project Complete</h2>
+        </div>
+
+        <h2 className='rupees'>55%</h2>
+          <div className="progress-bar">
+            <div className="progressfill"></div> 
+          </div>
+          <h2 className='rupees'>45%</h2>
+    </div>
       </div>
       <div className="second-big-wrapper">
         <div className="task-wrapper">
           <Chart
                       chartType="PieChart"
-                        width="300px"
+                        width="350px"
                         height="230px"
                         data={data2}
                         options={options2}
@@ -108,13 +141,23 @@ function Performance() {
         <div className="resources-task-wrapper">
           <Chart
                       chartType="PieChart"
-                        width="300px"
+                        width="350px"
                         height="230px"
-                        data={data2}
-                        options={options2}
+                        data={data3}
+                        options={options3}
                     />
         </div>
-        <div className="cost-budget-wrapper"></div>
+        <div className="cost-budget-wrapper">
+        <div className="budget-heading">
+          <h2>Cost and Budget</h2>
+        </div>
+
+        <h2 className='rupees'>₹47000</h2>
+          <div className="progress-bar">
+            <div className="progressfill"></div> 
+          </div>
+          <h2 className='rupees'>₹46000</h2>
+        </div>
       </div>
     </div>
     </div>
