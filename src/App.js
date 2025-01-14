@@ -7,6 +7,10 @@ import Performance from './components/view/Performance/Performance.jsx';
 import ProcurementModule from './components/view/ProcurementModule/ProcurementModule.jsx';
 import Grievance from './components/view/Grievance/Grievance.jsx';
 import AssetModule from './components/view/AssetModule/AssetModule.jsx';
+import SchemeModule from './components/view/SchemeModule/SchemeModule.jsx';
+import DocumentModule from './components/view/DocumentModule/DocumentModule.jsx';
+import EventModule from './components/view/EventModule/EventModule.jsx';
+import ExceptionModule from './components/view/ExceptionModule/ExceptionModule.jsx';
 
 function App() {
   return (
@@ -21,6 +25,10 @@ function App() {
           <Route path='/procure-module' element={<ProcurementModule />}></Route>
           <Route path='/grievance' element={<Grievance />}></Route>
           <Route path='/asset-module' element={<AssetModule />}></Route>
+          <Route path='/scheme-module' element={<SchemeModule />}></Route>
+          <Route path='/document-module' element={<DocumentModule />}></Route>
+          <Route path='/event-module' element={<EventModule />}></Route>
+          <Route path='/exception-module' element={<ExceptionModule />}></Route>
       </Route>
     </Routes>
     </BrowserRouter>

@@ -71,13 +71,13 @@ table{
 th {
   text-align: center;
   padding: 12px;
-  color: #9899AA;
+  /* color: #9899AA; */
   font-weight: 400;
   font-size: 13px;
 }
 td{
   padding: 5px;
-  color: #9899AA;
+  /* color: #9899AA; */
   text-align: center;
   font-size: 13px;
 }

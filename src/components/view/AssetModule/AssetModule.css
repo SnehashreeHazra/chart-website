@@ -97,7 +97,7 @@
   padding: 8px 16px;
   border-radius: 20px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 10px;
 }
 
 
@@ -108,7 +108,7 @@
   padding: 8px 16px;
   border-radius: 20px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 10px;
 }
 
 
@@ -123,13 +123,13 @@
 .feeds-table td {
   text-align: left;
   padding: 12px 16px;
-  font-size: 0.9rem;
+  font-size: 12px;
 }
 
 .feeds-table th {
   /* background-color: #f1f5f9; */
   color: #475569;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .feeds-table tbody tr:nth-child(odd) {
@@ -148,7 +148,8 @@
   background: transparent;
   /* border: 1px solid #ddd; */
   /* border-radius: 8px; */
-  width: 430px;
+  width: 500px;
+  height: 300px;
   border: 1px solid #000;
   /* padding: 16px; */
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -166,25 +167,19 @@
   border-collapse: collapse;
 }
 
-
-.calender thead tr:first-child {
-  /* font-weight: bold; */
-  text-align: center;
+.date-header{
   border-bottom: 1px solid #000;
-  padding: 8px; 
 }
-
-th,
-td {
-  text-align: center;
-  padding: 8px;
-  font-size: 14px;
-  /* border: 1px solid #ddd; */
+.year-header{
+  border-bottom: 1px solid #000;
+}
+.weekday-header{
+  background-color: #2F69F4;
+  color: #fff;
 }
 
 .day {
   cursor: pointer;
-  background-color: #f9f9f9;
 }
 
 .day:hover {

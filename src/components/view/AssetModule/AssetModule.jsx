@@ -14,8 +14,8 @@ export const data = [
   ["Dec 01", 1000, 400],
   ["Dec 02", 1170, 460],
   ["Dec 03", 660, 1120],
-  ["Dec 04", 1030, 540],
-  ["Dec 05", 1000, 400],
+  ["Dec 04", 1200, 480],
+  ["Dec 05", 660, 1120],
   ["Dec 06", 1170, 460],
   ["Dec 07", 660, 1120],
 ];
@@ -177,21 +177,22 @@ function AssetModule() {
       
       <table className="calendar">
       <thead>
-        <tr className="date-header">22/05/24</tr>
-      </thead>
-      <thead>
-        <tr>
-          <td colSpan="3">September</td>
-          <td colSpan="4">2024</td>
-        </tr>
-      </thead>
-        <thead>
-          <tr>
+  <tr className="date-header">
+    <td>22/05/24</td>
+  </tr>
+  <tr className='year-header'>
+    <td colSpan="3">September</td>
+    <td colSpan="4">2024</td>
+  </tr>
+  <tr className='weekday-header'>
             {["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"].map((day) => (
               <th key={day}>{day}</th>
             ))}
           </tr>
-        </thead>
+</thead>
+        
+          
+        
         <tbody>
           {/* Week 1 */}
           <tr>

@@ -259,13 +259,14 @@ function DashboardMain() {
 
         <div className="deviation-module">
         <h2>Deviation Module</h2>
-          <div className="deviation-module-box">
+          <div className="deviation-module-box" style={{borderRadius: "8px"}}>
           <Chart
             chartType="PieChart"
               width="200px"
               height="200px"
               data={data1}
               options={options1}
+              style={{borderRadius: '20px'}}
           />
           </div>
         </div>
