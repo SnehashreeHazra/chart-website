@@ -59,11 +59,13 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 20px;
+  column-gap: 35px;
 }
 .charts-container h2{
   font-size: 13px;
+  font-weight: 600;
 }
+
 .deviation-module h2,
 .grievance-module h2,
 .monitoring-module h2,
@@ -82,16 +84,19 @@
   min-width: 50%;
 }
 .first-big-div-wrapper{
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .first-big-div-wrapper h2{
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 600;
+  font-weight: 600;
   margin-bottom: 0;
 }
 .first-big-div-wrapper h3{
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 13px;
+  font-weight: 600;
 }
 .second-big-div{
   width: 100%;
@@ -171,11 +176,14 @@
   height: 250px;
 }
 .second-big-div h2{
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 600;
 }
 .last-chart-wrapper{
+  margin-top: 10px;
   height: 400px;
 }
 .last-chart-wrapper h3{
   font-size: 13px;
+  font-weight: 600;
 }

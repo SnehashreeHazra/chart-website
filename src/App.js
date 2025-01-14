@@ -11,6 +11,7 @@ import SchemeModule from './components/view/SchemeModule/SchemeModule.jsx';
 import DocumentModule from './components/view/DocumentModule/DocumentModule.jsx';
 import EventModule from './components/view/EventModule/EventModule.jsx';
 import ExceptionModule from './components/view/ExceptionModule/ExceptionModule.jsx';
+import ReportModule from './components/view/ReportModule/ReportModule.jsx';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='/document-module' element={<DocumentModule />}></Route>
           <Route path='/event-module' element={<EventModule />}></Route>
           <Route path='/exception-module' element={<ExceptionModule />}></Route>
+          <Route path='/report-module' element={<ReportModule />}></Route>
       </Route>
     </Routes>
     </BrowserRouter>
