@@ -109,7 +109,7 @@ function AssetModule() {
 <Chart
   chartType="LineChart"
   width="600px"
-  height="100%"
+  height="300px"
   data={data}
   options={options}
   legendToggle
@@ -170,7 +170,7 @@ function AssetModule() {
 
 <div className="project-table-column">
     <div className="project-fund-chart">
-      <Chart chartType="ColumnChart" width="550px" height="200px" data={data3} options={options3}/>
+      <Chart chartType="ColumnChart" width="550px" height="300px" data={data3} options={options3}/>
     </div>
 
     <div className="date-picker">

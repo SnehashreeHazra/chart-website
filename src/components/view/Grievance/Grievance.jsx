@@ -23,6 +23,7 @@ export const options2 = {
   pieHole: 0.8,
   is3D: false,
   colors: ["#666DCE", "#FF969C", "#84D8F2", "#FBD677"],
+  backgroundColor: 'transparent',
 };
 
 export const data3 = [
@@ -47,7 +48,8 @@ export const options3 = {
   legend: "none",
   titleTextStyle: {
     fontSize: 13
-  }
+  },
+  backgroundColor: 'transparent',
 }
 
 function Grievance() {

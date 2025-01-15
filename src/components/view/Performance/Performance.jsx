@@ -26,6 +26,7 @@ export const options = {
   annotations: {
     alwaysOutside: true, 
   },
+  backgroundColor: "transparent",
 };
 
 
@@ -44,6 +45,7 @@ export const options2 = {
   pieHole: 0.8,
   is3D: false,
   colors: ["#40BEA6", "#FF7C3B", "#B3A8F9", "#B3A8F9"],
+  backgroundColor: "transparent",
 };
 
 
@@ -62,7 +64,7 @@ export const options3 = {
   pieHole: 0.8,
   is3D: false,
   colors: ["#40BEA6", "#FF7C3B", "#B3A8F9", "#B3A8F9"],
-
+  backgroundColor: "transparent",
 };
 
 function Performance() {
@@ -132,7 +134,7 @@ function Performance() {
         <div className="task-wrapper">
           <Chart
                       chartType="PieChart"
-                        width="350px"
+                        width="440px"
                         height="230px"
                         data={data2}
                         options={options2}

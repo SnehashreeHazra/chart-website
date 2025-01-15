@@ -10,6 +10,7 @@
   width: calc(100% - 220px);
   margin-left: auto;
   padding-right: 20px;
+  height: 120vh;
 }
 .main-wrapper{
   display: flex;
@@ -64,11 +65,12 @@
 .feeds-container {
   background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 20px;
   width: 100%;
   max-width: 600px;
   min-width: 600px;
   margin-top: 20px;
+
 }
 
 /* Header section */
@@ -115,14 +117,14 @@
 .feeds-table {
   width: 100%;
   border-collapse: collapse;
-  border-radius: 8px;
+  
   overflow: hidden;
 }
 
 .feeds-table th,
 .feeds-table td {
   text-align: left;
-  padding: 12px 16px;
+  padding: 9px 16px;
   font-size: 12px;
 }
 
@@ -148,8 +150,8 @@
   background: transparent;
   /* border: 1px solid #ddd; */
   /* border-radius: 8px; */
-  width: 500px;
-  height: 300px;
+  width: 550px;
+  height: 295px;
   border: 1px solid #000;
   /* padding: 16px; */
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -202,5 +204,9 @@
   background-color: #007bff;
   color: white;
   font-weight: bold;
+}
+.project-fund-chart{
+  overflow: hidden;
+  border-radius: 20px;
 }
 

@@ -262,7 +262,6 @@ function DashboardMain() {
           <div className="deviation-module-box">
           <Chart
             chartType="PieChart"
-              width="250px"
               height="250px"
               data={data1}
               options={options1}
@@ -275,7 +274,7 @@ function DashboardMain() {
           <div className="grievance-module-box">
           <Chart
             chartType="PieChart"
-              width="250px"
+              
               height="250px"
               data={data2}
               options={options2}
@@ -287,7 +286,7 @@ function DashboardMain() {
           <div className="monitoring-module-box">
           <Chart
           chartType="BarChart"
-          width="300px"
+          
           height="250px"
           data={data}
           options={options}
@@ -297,16 +296,16 @@ function DashboardMain() {
         <div className="management-module">
         <h2>Asset management Module</h2>
         <div className="management-module-box">
-          <Chart chartType="ColumnChart" width="300px" height="250px" data={data3} options={options3}/>
+          <Chart chartType="ColumnChart"height="250px" data={data3} options={options3}/>
         </div>
         </div>
-        <div className="finance-module" style={{marginTop: "15px"}}>
+        <div className="finance-module">
           <h2>Finance Module</h2>
           <div className="finance-module-box">
           <Chart
         chartType="BarChart"
-        width="300px"
-        height="200px"
+        
+        height="250px"
         data={data4}
         options={options4}
       />
