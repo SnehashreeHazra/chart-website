@@ -12,9 +12,8 @@ function TaskTracking() {
   return (
     <div className='task-container'>
       <div className="task-content">
+      <h2 className='task-module-heading'>Task Management</h2>
           <div className="boxes-wrapper">
-
-
 
           <div className="small-boxes-wrapper">
                 <div className="wrapper-heading">

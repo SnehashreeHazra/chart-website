@@ -6,7 +6,7 @@ function DocumentModule() {
     <>
       <div className="document-module-content">
         <h2 className='document-module-heading'>Document Review</h2>
-        <div class="table-container">
+        <div class="doc-table-container">
     <table className='doc-table'>
       <thead className='doc-table-header'>
         <tr>
