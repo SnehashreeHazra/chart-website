@@ -64,20 +64,20 @@
 .table-title{
   font-size: 14px;
 }
-table{
+.report-table1{
   width: 100%;
   border-collapse: collapse;
 }
-th {
+.report-table-heading1 {
   text-align: center;
   padding: 12px;
-  /* color: #9899AA; */
+  color: #9899AA;
   font-weight: 400;
   font-size: 13px;
 }
-td{
+.report-table-data1{
   padding: 5px;
-  /* color: #9899AA; */
+  color: #9899AA;
   text-align: center;
   font-size: 13px;
 }

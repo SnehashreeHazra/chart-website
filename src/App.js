@@ -12,6 +12,8 @@ import DocumentModule from './components/view/DocumentModule/DocumentModule.jsx'
 import EventModule from './components/view/EventModule/EventModule.jsx';
 import ExceptionModule from './components/view/ExceptionModule/ExceptionModule.jsx';
 import ReportModule from './components/view/ReportModule/ReportModule.jsx';
+import DeviationModule from './components/view/DeviationModule/DeviationModule.jsx';
+import WebgisModule from './components/view/WebgisModule/WebgisModule.jsx';
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
           <Route path='/event-module' element={<EventModule />}></Route>
           <Route path='/exception-module' element={<ExceptionModule />}></Route>
           <Route path='/report-module' element={<ReportModule />}></Route>
+          <Route path='/deviation-module' element={<DeviationModule />}></Route>
+          <Route path='/webgis-module' element={<WebgisModule />}></Route>
       </Route>
     </Routes>
     </BrowserRouter>

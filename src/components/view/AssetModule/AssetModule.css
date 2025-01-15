@@ -137,7 +137,7 @@
 }
 
 .feeds-table td {
-  color: #475569;
+  color: #C0C0C0;
 }
 .project-table-column{
   margin-top: 30px;
@@ -170,20 +170,32 @@
 .date-header{
   border-bottom: 1px solid #000;
 }
+.date-header td{
+  padding: 10px;
+}
 .year-header{
   border-bottom: 1px solid #000;
+}
+.year-header td{
+  padding: 10px;
 }
 .weekday-header{
   background-color: #2F69F4;
   color: #fff;
+  font-weight: 400;
+}
+.weekday-header th{
+  font-weight: 400;
+  padding: 10px;
 }
 
-.day {
-  cursor: pointer;
+.calendar tbody{
+  text-align: center;
 }
 
-.day:hover {
-  background-color: #e6f7ff;
+.calendar tbody td{
+  padding: 5px;
+  font-size: 13px;
 }
 
 .day.selected {

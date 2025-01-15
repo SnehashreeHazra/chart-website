@@ -189,24 +189,24 @@ function FinancialDashboard() {
           <div className="report-table-wrapper">
               <div className="table-container1">
                 <h2 className='table-title'>Financial Reporting</h2>
-                <table>
+                <table className='report-table1'>
                 <thead>
                 <tr>
-                  <th>SL</th>
-                  <th>Name</th>
-                  <th>Payment</th>
-                  <th>Phone Number</th>
-                  <th>Last Payment Date</th>
+                  <th className='report-table-heading1'>SL</th>
+                  <th className='report-table-heading1'>Name</th>
+                  <th className='report-table-heading1'>Payment</th>
+                  <th className='report-table-heading1'>Phone Number</th>
+                  <th className='report-table-heading1'>Last Payment Date</th>
                 </tr>
                 </thead>
                 <tbody>
                   {data.map((item)=> (
                         <tr key={item.id}>
-                          <td>{item.id}</td>
-                          <td>{item.name}</td>
-                          <td>{item.payment}</td>
-                          <td>{item.phone}</td>
-                          <td>{item.lastPaymentDate}</td>
+                          <td className='report-table-data1'>{item.id}</td>
+                          <td className='report-table-data1'>{item.name}</td>
+                          <td className='report-table-data1'>{item.payment}</td>
+                          <td className='report-table-data1'>{item.phone}</td>
+                          <td className='report-table-data1'>{item.lastPaymentDate}</td>
                         </tr>
                   ))}
                 </tbody>

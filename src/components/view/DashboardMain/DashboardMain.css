@@ -187,3 +187,11 @@
   font-size: 13px;
   font-weight: 600;
 }
+.deviation-module-box,
+.grievance-module-box,
+.monitoring-module-box,
+.management-module-box,
+.finance-module-box{
+  overflow: hidden;
+  border-radius: 20px;
+}

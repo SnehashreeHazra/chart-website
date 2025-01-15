@@ -259,7 +259,7 @@ function DashboardMain() {
 
         <div className="deviation-module">
         <h2>Deviation Module</h2>
-          <div className="deviation-module-box" style={{borderRadius: "8px"}}>
+          <div className="deviation-module-box">
           <Chart
             chartType="PieChart"
               width="250px"
@@ -507,7 +507,7 @@ function DashboardMain() {
           <h2>Procurement Module</h2>
             <div className="last-chart-wrapper">
             <h3>Project Plan</h3>
-            <Bar data={data5} options={options5} style={{ marginTop: '20px', backgroundColor: '#fff', borderRadius: '10px' }}/>
+            <Bar data={data5} options={options5} height={400} width={600} style={{ marginTop: '20px', backgroundColor: '#fff', borderRadius: '10px', }}/>
             </div>
           </div>
         </div>

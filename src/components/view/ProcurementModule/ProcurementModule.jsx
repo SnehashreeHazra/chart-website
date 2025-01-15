@@ -83,8 +83,10 @@ function ProcurementModule() {
   return (
     <div>
       <div className="procure-content">
-        <h2>Project Plan</h2>
+        <h2 className='procure-heading'>Project Plan</h2>
+        <div style={{ width: "1097px", height: "490px", marginTop: "15px" }}>
         <Bar data={data5} options={options5} />
+        </div>
       </div>
     </div>
   )

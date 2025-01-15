@@ -182,7 +182,7 @@ function AssetModule() {
   </tr>
   <tr className='year-header'>
     <td colSpan="3">September</td>
-    <td colSpan="4">2024</td>
+    <td colSpan="4" style={{borderLeft: "1px solid #000"}}>2024</td>
   </tr>
   <tr className='weekday-header'>
             {["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"].map((day) => (
