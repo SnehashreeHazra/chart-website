@@ -81,3 +81,11 @@
   text-align: center;
   font-size: 13px;
 }
+.fund-div,
+.first-donut,
+.second-donut,
+.expence-tracking,
+.payment-tracking{
+  overflow: hidden;
+  border-radius: 20px;
+}

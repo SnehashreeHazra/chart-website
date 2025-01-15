@@ -3,8 +3,6 @@ import './FinancialDashboard.css'
 import { Chart } from "react-google-charts";
 
 
-
-
 export const data1 = [
   ["Task", "Hours per Day"],
   ["Balance", 40],
