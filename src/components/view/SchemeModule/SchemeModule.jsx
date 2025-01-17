@@ -38,7 +38,7 @@ function SchemeModule() {
 
                   <div className="box">
                     <div className="box-heading">
-                      <h2>Road Construction(Dhalai)</h2>
+                      <h2>Tourism Model(Khowai)</h2>
                       <img src={file_four_img} alt="" />
                     </div>
                     <p>Lorem Ipsum'is simply dummy text of </p>
@@ -55,7 +55,7 @@ function SchemeModule() {
 
                   <div className="box">
                     <div className="box-heading">
-                      <h2>Road Construction(Dhalai)</h2>
+                      <h2>Pipeline(Khowai)</h2>
                       <img src={file_four_img} alt="" />
                     </div>
                     <p>Lorem Ipsum'is simply dummy text of </p>
@@ -99,7 +99,7 @@ function SchemeModule() {
 
                   <div className="box">
                     <div className="box-heading">
-                      <h2>Road Construction(Dhalai)</h2>
+                      <h2>Tourism Model(Khowai)</h2>
                       <img src={file_four_img} alt="" />
                     </div>
                     <p>Lorem Ipsum'is simply dummy text of </p>
@@ -118,7 +118,7 @@ function SchemeModule() {
 
                   <div className="box">
                     <div className="box-heading">
-                      <h2>Road Construction(Dhalai)</h2>
+                      <h2>Pipeline(Khowai)</h2>
                       <img src={file_four_img} alt="" />
                     </div>
                     <p>Lorem Ipsum'is simply dummy text of </p>
@@ -162,7 +162,7 @@ function SchemeModule() {
 
                   <div className="box">
                     <div className="box-heading">
-                      <h2>Road Construction(Dhalai)</h2>
+                      <h2>Tourism Model(Khowai)</h2>
                       <img src={file_four_img} alt="" />
                     </div>
                     <p>Lorem Ipsum'is simply dummy text of </p>
@@ -183,7 +183,7 @@ function SchemeModule() {
 
                   <div className="box">
                     <div className="box-heading">
-                      <h2>Road Construction(Dhalai)</h2>
+                      <h2>Pipeline(Khowai)</h2>
                       <img src={file_four_img} alt="" />
                     </div>
                     <p>Lorem Ipsum'is simply dummy text of </p>
